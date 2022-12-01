@@ -22,11 +22,12 @@ kubectl exec -it statefulset-mysql-0 -- bash
 
 ## Listar os serviços em execução:
 marcoscrocci at ubuntu-unity in ~/projetos/alura/alura-aks on main✘✘✘ 22-11-30 - 21:50:17 <br/>
-╰─⠠⠵ kubectl get services
-NAME                TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE <br/>
-db                  ClusterIP      10.98.33.190   <none>        3306/TCP       15m <br/>
-kubernetes          ClusterIP      10.96.0.1      <none>        443/TCP        45m <br/>
-servico-aplicacao   LoadBalancer   10.105.43.97   <pending>     80:31981/TCP   8m13s <br/>
+╰─⠠⠵ kubectl get services <br/>
+| NAME | TYPE | CLUSTER-IP | EXTERNAL-IP | PORT(S) | AGE |
+| --- | --- | --- | --- | --- | --- |
+| db | ClusterIP | 10.98.33.190 | <none> | 3306/TCP | 15m |
+| kubernetes | ClusterIP | 10.96.0.1 | <none> | 443/TCP | 45m |
+| servico-aplicacao | LoadBalancer | 10.105.43.97 | <pending> | 80:31981/TCP | 8m13s |
 
 ### Abrir o serviço dentro do minikube:
 marcoscrocci at ubuntu-unity in ~/projetos/alura/alura-aks on main✘✘✘ 22-11-30 - 21:51:09 <br/>
