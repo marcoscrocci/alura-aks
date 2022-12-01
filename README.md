@@ -19,6 +19,10 @@ kubectl get svc -o wide
 
 ## Entrar no terminal do POD do banco de dados:
 kubectl exec -it statefulset-mysql-0 -- bash
+root@statefulset-mysql-0:/#
+
+## Executar os scripts do banco de dados:
+No terminal do statefulset-mysql-0, executar os scripts do banco de dados que estão no arquivo <b>./db/scripts.sql</b>
 
 ## Listar os serviços em execução:
 marcoscrocci at ubuntu-unity in ~/projetos/alura/alura-aks on main✘✘✘ 22-11-30 - 21:50:17 <br/>
