@@ -1,8 +1,11 @@
-apiVersion: apps/v1beta1
+apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: statefulset-mysql
 spec:
+  selector:
+    matchLabels:
+      name: mysql #precisa ter o spec.selector.matchLabels.name = spec.template.metadata.labels.name
   serviceName: db
   template:
     metadata:
