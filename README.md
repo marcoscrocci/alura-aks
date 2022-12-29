@@ -37,3 +37,24 @@ marcoscrocci at ubuntu-unity in ~/projetos/alura/alura-aks on main✘✘✘ 22-1
 marcoscrocci at ubuntu-unity in ~/projetos/alura/alura-aks on main✘✘✘ 22-11-30 - 21:51:09 <br/>
 ╰─⠠⠵ minikube service servico-aplicacao
 
+### Serviço do Kubernetes dentro do Azure
+Azure Kubernetes Services - AKS
+
+### Instalar o Azure CLI
+
+Documentação: https://learn.microsoft.com/en-us/cli/azure/install-azure-cli
+
+### Fazer login no Azure CLI
+No Terminal executar o comando:
+az login
+
+Deve abrir o navegador para colocar o usuário e a senha. 
+Ao retornar ao Terminal, se o login realmente for realizado com sucesso, deve mostrar que houve a autenticação.
+
+az aks get-credentials --name alurasports_k8s --resource-group alurasports_k8s_group
+
+A partir de então o comando kubectl irá executar as instrução dentro do cluster do AKS.
+
+kubectl get nodes -o wide
+
+kubectl get pods -o wide
