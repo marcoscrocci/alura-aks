@@ -13,8 +13,8 @@ spec:
     spec:
       containers:
         - name: container-aplicacao-loja
-          image: alurasportsrc.azurecr.io/loja/aplicacao-loja:v1 
+          image: aluracliregistry.azurecr.io/loja/aplicacao-loja:v1 
           ports:
             - containerPort: 80
       imagePullSecrets:
-        - name: alurasportsrc.secret
+        - name: aluracliregistry.secret
